@@ -11,7 +11,7 @@
 
 * Add colors on Tuesday
 
-# Beyomd MVP
+# Beyond MVP
 
 * Try adding animation
 
