@@ -10,17 +10,17 @@
         <style>
             /* CSS */
           body{
-            background-color: grey;
-          }
+            background-color: grey;}
+        .Context{padding: 10px;}
 
         </style>
 
         <title>Public Transportation</title>
     </head>
   <div>
-    <body>
+    <body class="main">
         <!-- HTML -->
-        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary navbar-static-top" data-bs-theme="dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Public Transportation</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#Today">Today</a>
+                      <a class="nav-link active"  href="#Today">Today</a>
                     </li>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -58,7 +58,7 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title" href="#Context">Context</h5>
+              <h5 class="Context card-title" id="Context">Context</h5>
               Transportation is important to many peoples lives, without it nobody would be able to get around.Today's modes of public transportations are good but how can they become better?
               This website will show the many current devices and improvements that can be made for public transportation.
 
@@ -71,7 +71,7 @@
                       <div class="A">
                         <div class="card">
                           <div class="card body">
-                            <h5 href="#Today">Software for Transportation</h5>
+                            <h5 id="Today">Software for Transportation</h5>
                              <!--<p>-->
                               <img src="images/MYmta.png"
                               width="200"
@@ -132,7 +132,7 @@
                       <div class="B">
                         <div class="card">
                           <div class="card body">
-                            <h5 href="#Future">Brainstorming ideas</h5>
+                            <h5 id="Future">Brainstorming ideas</h5>
 
                                   <h6>Self driving bus/train</h6>
                                 <ul>
@@ -178,8 +178,10 @@
                   </div>
                 </div>
                 <!--Images for transportaton today-->
+                <!--Aframe-->
+          <a-scene>
 
-
+          </a-scene>
 
 
 
