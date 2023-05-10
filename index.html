@@ -4,15 +4,16 @@
         <!-- Required meta tags /-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" type="text/css" />
         <style>
             /* CSS */
           body{
             background-color: grey;}
-        .Context{padding: 10px;}
-
+        .Context{padding: 10px; background-color; margin:  10px;}
+        a-scene { height: 300px; width: 600px; align: center;}
+        .navbar{padding: 30px;}
         </style>
 
         <title>Public Transportation</title>
@@ -49,7 +50,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                  <a class="nav-link active" aria-current="page" href="#Aframe">A-frame example</a>
                                 </li>
 
             </div>
@@ -57,7 +58,7 @@
         </nav>
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body card-body-color=">
               <h5 class="Context card-title" id="Context">Context</h5>
               Transportation is important to many peoples lives, without it nobody would be able to get around.Today's modes of public transportations are good but how can they become better?
               This website will show the many current devices and improvements that can be made for public transportation.
@@ -179,10 +180,14 @@
                 </div>
                 <!--Images for transportaton today-->
                 <!--Aframe-->
-          <a-scene>
-
+        <div id="myEmbeddedScene">
+          <a-scene embedded id="Aframe">
+            <a-box color="grey" position="0 6 -20" width="30" depth="10" height="10" rotation="0 0 0"></a-box>
+            <a-sky color="red" radius="50px"></a-sky>
+            <a-cylinder position="0 6 -5" width="10" height="10" rotation="90 0 90" size="100"></a-cylinder>
+            <a-plane rotation="-90 0 0" width="50" height="30" color="black"></a-plane>
           </a-scene>
-
+        </div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
